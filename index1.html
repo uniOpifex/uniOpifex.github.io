@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+        <div class="w3-top">
+		<div class="w3-bar" id="myNavbar">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+			  title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="#home" class="w3-bar-item w3-button">HOME</a>
+			<a href="#about" class="w3-bar-item w3-button w3-hide-small">
+				<i class="fa fa-user"></i> ABOUT</a>
+			<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">
+				<i class="fa fa-th"></i> PORTFOLIO</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+				<i class="fa fa-envelope"></i> CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+				<i class="fa fa-search"></i>
+			</a>
+		</div>
+
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+			<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+			<a href="#" class="w3-bar-item w3-button">SEARCH</a>
+		</div>
+	</div>
+        
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY
+                    <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+            </div>
+        </div>
+        <div class="w3-content w3-display-container">
+            <br>
+                <div class="w3-center">
+                        
+                        <button class="w3-button demo" onclick="currentDiv(1)">About Me</button> 
+                        <button class="w3-button demo" onclick="currentDiv(2)">Portfolio</button> 
+                        <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+                        <div class="w3-section">
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                        </div>
+                      </div>
+          <section class="mySlides" > 
+              	<!-- First Parallax Image with Logo Text -->
+	
+    
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p class="w3-center">
+                <em>I love photography</em>
+            </p>
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p>
+                        <b>
+                            <i class="fa fa-user w3-margin-right"></i>My Name</b>
+                    </p>
+                    <br>
+                    <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500"
+                      height="333">
+                </div>
+    
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+      <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div> -->
+        </div>
+          </section>
+          <section class="mySlides" > 
+                <div class="w3-container w3-teal">
+                <h1>Summer Holiday</h1>
+                </div>
+                
+                <div class="w3-content">
+                
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_5terre.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>5 Terre</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_monterosso.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>Monterosso</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_vernazza.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>Vernazza</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_manarola.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>Manarola</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_corniglia.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>Corniglia</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                <div class="w3-row w3-margin">
+                
+                <div class="w3-third">
+                  <img src="img_riomaggiore.jpg" style="width:100%;min-height:200px">
+                </div>
+                <div class="w3-twothird w3-container">
+                  <h2>Riomaggiore</h2>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                
+                </div>
+                </div>
+          </section>
+          <div class="mySlides" > <h1>Yolo</h1></div>
+          <div class="mySlides" > <h1>Yolo</h1></div>
+          <div class="mySlides" > <h1>Yolo</h1></div>
+        
+          <div class="w3-center">
+                <div class="w3-section">
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                </div>
+                <button class="w3-button demo" onclick="currentDiv(1)">About Me</button> 
+                <button class="w3-button demo" onclick="currentDiv(2)">PortFolio</button> 
+                <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+              </div>
+        </div>
+
+
+        	<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+                <a href="#home" class="w3-button w3-light-grey">
+                    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+                <div class="w3-xlarge w3-section">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity"></i>
+                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </div>
+                <p>Powered by
+                    <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+                </p>
+            </footer>
+        
+        
+        <script>
+                function myMap() {
+                    myCenter = new google.maps.LatLng(33.753746, -84.386330);
+                    var mapOptions = {
+                        center: myCenter,
+                        zoom: 12,
+                        scrollwheel: false,
+                        draggable: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+    
+                    var marker = new google.maps.Marker({
+                        position: myCenter,
+                    });
+                    marker.setMap(map);
+                }
+    
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+    
+                // Change style of navbar on scroll
+                window.onscroll = function () {
+                    myFunction()
+                };
+    
+                function myFunction() {
+                    var navbar = document.getElementById("myNavbar");
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                    } else {
+                        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                    }
+                }
+    
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function toggleFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+    
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function currentDiv(n) {
+                     showDivs(slideIndex = n);
+                }
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+    
+                function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+            </script>
+    
+</body>
+</html>
